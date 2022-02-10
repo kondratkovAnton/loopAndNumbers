@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 public class Numbers {
     public static void main(String[] args) {
-        int sumNumbers = 0; // Сумма цифр числа.
-        int sumOddNumbers = 0; // Сумма нечётных цифр числа.
-        int maxNumber = 0; // Максимальная цифра числа.
+        int sumNumbers = 0;
+        int sumOddNumbers = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число: ");
         int number = scanner.nextInt();
+        int maxNumber = number % 10;
 
-        while (number > 0) {
+        while (number != 0) {
             if (maxNumber < number % 10) {
                 maxNumber = number % 10;
             }

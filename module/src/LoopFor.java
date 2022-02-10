@@ -4,7 +4,7 @@
 public class LoopFor {
     public static void main(String[] args) {
         for (int i = 100; i >= 1; i--) {
-            if (new LoopFor().multipleFour(i)) {
+            if (multipleFour(i)) {
                 System.out.println(i);
             }
         }
@@ -16,7 +16,7 @@ public class LoopFor {
      * @param number Переданное число.
      * @return true - переданное число кратно цифре 4, false - переданное число не кратно цифре 4.
      */
-    private boolean multipleFour(int number) {
+    public static boolean multipleFour(int number) {
         return number % 4 == 0;
     }
 }
