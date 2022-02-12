@@ -12,7 +12,7 @@ public class Numbers {
         int sumOddNumbers = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число: ");
-        int number = scanner.nextInt();
+        int number = Math.abs(scanner.nextInt());
         int maxNumber = number % 10;
 
         while (number != 0) {
